@@ -2,10 +2,14 @@
 
 <!-- ![alt text](https://github.com/waldenchan95/IGEN430/blob/main/image.jpg?raw=true) -->
 
-Capstone Project
+Engineering Capstone Project
 
 ## Current Progress
 
-![alt text](Images/IMG_5032.png)
+<p align="center">
+  <img src="Images/IMG_5032.png" alt="Image 1" width="50%">
+</p>
 
-![alt text](<Images/CAD model welding robot.png>)
+<p align="center">
+  <img src="Images/CAD model welding robot.png" alt="Image 2" width="60%">
+</p>
