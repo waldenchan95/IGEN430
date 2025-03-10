@@ -91,7 +91,9 @@ void loop() {
       // default:
       //   // Test to see if the command is a number
       //   stop();
-
+      case 'f':
+        forward();
+        break; 
     }
   
    }
@@ -110,34 +112,20 @@ void setSpeed(int pwm_freq) {
 }
 
 void backward(){
-  digitalWrite(motor1pin1,  HIGH);
-  digitalWrite(motor1pin2, LOW);
+  digitalWrite(motor1pin1,  LOW);
+  digitalWrite(motor1pin2, HIGH);
 
   digitalWrite(motor2pin1, HIGH);
   digitalWrite(motor2pin2, LOW);
 
-  digitalWrite(motor3pin1, HIGH);
-  digitalWrite(motor3pin2, LOW);
+  digitalWrite(motor3pin1, LOW);
+  digitalWrite(motor3pin2, HIGH);
 
   digitalWrite(motor4pin1, HIGH);
   digitalWrite(motor4pin2, LOW);
   delay(5);
 }
 
-void forward(){
-  digitalWrite(motor1pin1,  LOW);
-  digitalWrite(motor1pin2, HIGH);
-
-  digitalWrite(motor2pin1, LOW);
-  digitalWrite(motor2pin2, HIGH);
-
-  digitalWrite(motor3pin1, LOW);
-  digitalWrite(motor3pin2, HIGH);
-
-  digitalWrite(motor4pin1, LOW);
-  digitalWrite(motor4pin2, HIGH);
-  delay(5);
-}
 
 void stop(){
   digitalWrite(motor1pin1, LOW);
@@ -192,4 +180,22 @@ void rightTurn(){
   delay(5);
 }
 
+void forward(){
+  // motor goes down
+  digitalWrite(motor1pin1, HIGH);
+  digitalWrite(motor1pin2, LOW);
+
+  // motor goes up
+  digitalWrite(motor2pin1, LOW);
+  digitalWrite(motor2pin2, HIGH);
+
+  // motor goes uo
+  digitalWrite(motor3pin1, HIGH);
+  digitalWrite(motor3pin2, LOW);
+
+  //motor goes down
+  digitalWrite(motor4pin1, LOW);
+  digitalWrite(motor4pin2, HIGH);
+  delay(5);
+}
 
