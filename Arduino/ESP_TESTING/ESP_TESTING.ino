@@ -148,12 +148,12 @@ void leftTurn(){
   digitalWrite(motor1pin2, LOW);
 
   // motor goes down
-  digitalWrite(motor2pin1, LOW);
-  digitalWrite(motor2pin2, HIGH);
+  digitalWrite(motor2pin1, HIGH);
+  digitalWrite(motor2pin2, LOW);
 
   // motor goes down
-  digitalWrite(motor3pin1, LOW);
-  digitalWrite(motor3pin2, HIGH);
+  digitalWrite(motor3pin1, HIGH);
+  digitalWrite(motor3pin2, LOW);
 
   //motor goes up
   digitalWrite(motor4pin1, HIGH);
@@ -167,12 +167,12 @@ void rightTurn(){
   digitalWrite(motor1pin2, HIGH);
 
   // motor goes up
-  digitalWrite(motor2pin1, HIGH);
-  digitalWrite(motor2pin2, LOW);
+  digitalWrite(motor2pin1, LOW);
+  digitalWrite(motor2pin2, HIGH);
 
   // motor goes uo
-  digitalWrite(motor3pin1, HIGH);
-  digitalWrite(motor3pin2, LOW);
+  digitalWrite(motor3pin1, LOW);
+  digitalWrite(motor3pin2, HIGH);
 
   //motor goes down
   digitalWrite(motor4pin1, LOW);
