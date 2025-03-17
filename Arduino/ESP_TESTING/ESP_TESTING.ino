@@ -31,6 +31,9 @@ void leftTurn();
 void setSpeed(int pwm_freq );
 void stop(); 
 
+
+COMMAND [right, left, setspeed, stop ]
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(motor1pin1, OUTPUT);
